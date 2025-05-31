@@ -4,6 +4,7 @@
             "id": "new_york",
             "name": "New York",
             "coordinates": { "lat": 40.7128, "lng": -74.006 },
+            "population": 8405837,
             "widgetData": [
                 { "quarter": "Q3 2025", "value": 142, "percentage": 38 },
                 { "quarter": "Q4 2025", "value": 156, "percentage": 45 },
@@ -220,8 +221,8 @@
                     ]
                 },
                 {
-                    "cardId": "gdp",
-                    "cardName": "GDP",
+                    "cardId": "volume_per_product_unit",
+                    "cardName": "Volume per unit of product",
                     "historicalData": [
                         {
                             "quarter": "Q1 2024",
@@ -294,6 +295,7 @@
             "id": "london",
             "name": "London",
             "coordinates": { "lat": 51.5074, "lng": -0.1278 },
+            "population": 8908081,
             "widgetData": [
                 { "quarter": "Q3 2025", "value": 98, "percentage": 28 },
                 { "quarter": "Q4 2025", "value": 112, "percentage": 35 },
@@ -510,8 +512,8 @@
                     ]
                 },
                 {
-                    "cardId": "gdp",
-                    "cardName": "GDP",
+                    "cardId": "volume_per_product_unit",
+                    "cardName": "Volume per unit of product",
                     "historicalData": [
                         {
                             "quarter": "Q1 2024",
@@ -584,6 +586,7 @@
             "id": "tokyo",
             "name": "Tokyo",
             "coordinates": { "lat": 35.6764, "lng": 139.65 },
+            "population": 13929286,
             "widgetData": [
                 { "quarter": "Q3 2025", "value": 165, "percentage": 42 },
                 { "quarter": "Q4 2025", "value": 178, "percentage": 48 },
@@ -800,8 +803,8 @@
                     ]
                 },
                 {
-                    "cardId": "gdp",
-                    "cardName": "GDP",
+                    "cardId": "volume_per_product_unit",
+                    "cardName": "Volume per unit of product",
                     "historicalData": [
                         {
                             "quarter": "Q1 2024",
@@ -874,6 +877,7 @@
             "id": "paris",
             "name": "Paris",
             "coordinates": { "lat": 48.8566, "lng": 2.3522 },
+            "population": 2140526,
             "widgetData": [
                 { "quarter": "Q3 2025", "value": 128, "percentage": 35 },
                 { "quarter": "Q4 2025", "value": 142, "percentage": 42 },
@@ -1090,8 +1094,8 @@
                     ]
                 },
                 {
-                    "cardId": "gdp",
-                    "cardName": "GDP",
+                    "cardId": "volume_per_product_unit",
+                    "cardName": "Volume per unit of product",
                     "historicalData": [
                         {
                             "quarter": "Q1 2024",
@@ -1164,6 +1168,7 @@
             "id": "delhi",
             "name": "Delhi",
             "coordinates": { "lat": 28.6139, "lng": 77.209 },
+            "population": 19001819,
             "widgetData": [
                 { "quarter": "Q3 2025", "value": 145, "percentage": 38 },
                 { "quarter": "Q4 2025", "value": 158, "percentage": 45 },
@@ -1380,8 +1385,8 @@
                     ]
                 },
                 {
-                    "cardId": "gdp",
-                    "cardName": "GDP",
+                    "cardId": "volume_per_product_unit",
+                    "cardName": "Volume per unit of product",
                     "historicalData": [
                         {
                             "quarter": "Q1 2024",
@@ -1454,6 +1459,7 @@
             "id": "mumbai",
             "name": "Mumbai",
             "coordinates": { "lat": 19.076, "lng": 72.8777 },
+            "population": 12478338,
             "widgetData": [
                 { "quarter": "Q3 2025", "value": 138, "percentage": 36 },
                 { "quarter": "Q4 2025", "value": 152, "percentage": 43 },
@@ -1670,8 +1676,8 @@
                     ]
                 },
                 {
-                    "cardId": "gdp",
-                    "cardName": "GDP",
+                    "cardId": "volume_per_product_unit",
+                    "cardName": "Volume per unit of product",
                     "historicalData": [
                         {
                             "quarter": "Q1 2024",
@@ -1744,6 +1750,7 @@
             "id": "seoul",
             "name": "Seoul",
             "coordinates": { "lat": 37.5665, "lng": 126.978 },
+            "population": 9979073,
             "widgetData": [
                 { "quarter": "Q3 2025", "value": 152, "percentage": 40 },
                 { "quarter": "Q4 2025", "value": 165, "percentage": 47 },
@@ -1960,8 +1967,8 @@
                     ]
                 },
                 {
-                    "cardId": "gdp",
-                    "cardName": "GDP",
+                    "cardId": "volume_per_product_unit",
+                    "cardName": "Volume per unit of product",
                     "historicalData": [
                         {
                             "quarter": "Q1 2024",
@@ -2034,6 +2041,7 @@
             "id": "dubai",
             "name": "Dubai",
             "coordinates": { "lat": 25.276987, "lng": 55.296233 },
+            "population": 3471037,
             "widgetData": [
                 { "quarter": "Q3 2025", "value": 135, "percentage": 37 },
                 { "quarter": "Q4 2025", "value": 148, "percentage": 44 },
@@ -2250,8 +2258,8 @@
                     ]
                 },
                 {
-                    "cardId": "gdp",
-                    "cardName": "GDP",
+                    "cardId": "volume_per_product_unit",
+                    "cardName": "Volume per unit of product",
                     "historicalData": [
                         {
                             "quarter": "Q1 2024",
