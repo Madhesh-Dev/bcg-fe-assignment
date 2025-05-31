@@ -11,6 +11,19 @@ const options = {
         title: {
             display: false,
         },
+        annotation: {
+            annotations: {
+                line1: {
+                    type: "line",
+                    xMin: 5.5,
+                    xMax: 5.5,
+                    borderColor: "#666",
+                    borderWidth: 2,
+                    borderDash: [3, 3],
+                    adjustScaleRange: false,
+                },
+            },
+        },
     },
     scales: {
         x: {
@@ -20,6 +33,7 @@ const options = {
             grid: {
                 display: true,
                 color: "#d4d4d4",
+                borderColor: "#f00",
             },
         },
         y: {
@@ -29,7 +43,6 @@ const options = {
             },
             ticks: {
                 display: true,
-                color: "#3b4c53",
                 font: {
                     size: 12,
                 },
