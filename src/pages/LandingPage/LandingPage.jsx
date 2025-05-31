@@ -1,16 +1,10 @@
-import Map, { Source, Layer, Popup } from "react-map-gl";
 import React from "react";
 import classes from "./LandingPage.module.css";
-import "mapbox-gl/dist/mapbox-gl.css";
 import { Typography } from "@mui/material";
+import Map from "@/components/Map/Map";
+import Widgets from "@/components/Widgets/Widgets";
 
 export default function LandingPage() {
-    const [viewState, setViewState] = React.useState({
-        longitude: -100,
-        latitude: 40,
-        zoom: 3.5,
-    });
-
     return (
         <div className={classes["landing-container"]}>
             <div className={classes["userinfo-widgets-container"]}>
@@ -18,17 +12,10 @@ export default function LandingPage() {
                     Hello User,
                 </Typography>
 
-                <div className={classes["widgets-container"]}></div>
+                <Widgets />
             </div>
 
-            <div className={classes["map-container"]}>
-                <Map
-                    reuseMaps={true}
-                    mapStyle="mapbox://styles/mapbox/dark-v9"
-                    mapboxAccessToken={import.meta.env.VITE_MAPBOX_ACCESS_TOKEN}
-                    renderWorldCopies={false}
-                />
-            </div>
+            <Map />
         </div>
     );
 }
