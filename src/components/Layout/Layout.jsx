@@ -8,10 +8,11 @@ import MenuIcon from "@mui/icons-material/Menu";
 import LanguageIcon from "@mui/icons-material/Language";
 import PersonIcon from "@mui/icons-material/Person";
 import { Outlet } from "react-router-dom";
+import classes from "./Layout.module.css";
 
 function Layout() {
     return (
-        <>
+        <div className={classes["layout-container"]}>
             <AppBar position="sticky" sx={{ backgroundColor: "#191919" }}>
                 <Toolbar variant="dense">
                     <IconButton
@@ -67,8 +68,10 @@ function Layout() {
                 </Toolbar>
             </AppBar>
 
-            <Outlet />
-        </>
+            <div className={classes["outlet-contianer"]}>
+                <Outlet />
+            </div>
+        </div>
     );
 }
 
