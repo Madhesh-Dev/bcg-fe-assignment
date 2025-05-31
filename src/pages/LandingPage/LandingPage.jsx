@@ -3,8 +3,10 @@ import classes from "./LandingPage.module.css";
 import { Typography } from "@mui/material";
 import Map from "@/components/Map/Map";
 import Widgets from "@/components/Widgets/Widgets";
-
+import CardsWidget from "../../components/Widgets/CardsWidget";
+import mockData from "@/data/inventoryMockData.json";
 export default function LandingPage() {
+        const cities = mockData.cities;
     return (
         <div className={classes["landing-container"]}>
             <div className={classes["userinfo-widgets-container"]}>
@@ -12,10 +14,14 @@ export default function LandingPage() {
                     Hello User,
                 </Typography>
 
-                <Widgets />
-            </div>
 
+            </div>
+            {/* <Widgets /> */}
+            <CardsWidget cards={cities} />
             <Map />
         </div>
     );
 }
+
+
+
