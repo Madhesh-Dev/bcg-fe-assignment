@@ -1,0 +1,725 @@
+{
+    "cities": [
+      {
+        "id": "new_york",
+        "name": "New York",
+        "coordinates": { "lat": 40.7128, "lng": -74.0060 },
+        "widgetData": [
+          { "quarter": "Q3 2025", "value": 142, "percentage": 38 },
+          { "quarter": "Q4 2025", "value": 156, "percentage": 45 },
+          { "quarter": "Q1 2026", "value": 163, "percentage": 52 },
+          { "quarter": "Q2 2026", "value": 148, "percentage": 41 },
+          { "quarter": "Q3 2026", "value": 172, "percentage": 58 }
+        ],
+        "detailSets": [
+          {
+            "cardId": "consumption",
+            "cardName": "Total Consumption",
+            "historicalData": [
+              { "quarter": "Q1 2024", "actual": 100, "aiForecast": 98, "finalForecast": 99 },
+              { "quarter": "Q2 2024", "actual": 110, "aiForecast": 109, "finalForecast": 110 },
+              { "quarter": "Q3 2024", "actual": 115, "aiForecast": 114, "finalForecast": 115 },
+              { "quarter": "Q4 2024", "actual": 120, "aiForecast": 118, "finalForecast": 119 },
+              { "quarter": "Q1 2025", "actual": 125, "aiForecast": 123, "finalForecast": 124 },
+              { "quarter": "Q2 2025", "actual": 130, "aiForecast": 128, "finalForecast": 129 }
+            ],
+            "forecastData": [
+              { "quarter": "Q3 2025", "aiForecast": 135, "finalForecast": 138 },
+              { "quarter": "Q4 2025", "aiForecast": 140, "finalForecast": 142 },
+              { "quarter": "Q1 2026", "aiForecast": 145, "finalForecast": 148 },
+              { "quarter": "Q2 2026", "aiForecast": 150, "finalForecast": 152 },
+              { "quarter": "Q3 2026", "aiForecast": 155, "finalForecast": 158 }
+            ]
+          },
+          {
+            "cardId": "peak_demand",
+            "cardName": "Peak Demand",
+            "historicalData": [
+              { "quarter": "Q1 2024", "actual": 90, "aiForecast": 88, "finalForecast": 89 },
+              { "quarter": "Q2 2024", "actual": 95, "aiForecast": 93, "finalForecast": 94 },
+              { "quarter": "Q3 2024", "actual": 100, "aiForecast": 98, "finalForecast": 99 },
+              { "quarter": "Q4 2024", "actual": 105, "aiForecast": 103, "finalForecast": 104 },
+              { "quarter": "Q1 2025", "actual": 110, "aiForecast": 108, "finalForecast": 109 },
+              { "quarter": "Q2 2025", "actual": 115, "aiForecast": 113, "finalForecast": 114 }
+            ],
+            "forecastData": [
+              { "quarter": "Q3 2025", "aiForecast": 120, "finalForecast": 122 },
+              { "quarter": "Q4 2025", "aiForecast": 125, "finalForecast": 127 },
+              { "quarter": "Q1 2026", "aiForecast": 130, "finalForecast": 132 },
+              { "quarter": "Q2 2026", "aiForecast": 135, "finalForecast": 137 },
+              { "quarter": "Q3 2026", "aiForecast": 140, "finalForecast": 142 }
+            ]
+          },
+          {
+            "cardId": "average_price",
+            "cardName": "Average Price",
+            "historicalData": [
+              { "quarter": "Q1 2024", "actual": 50, "aiForecast": 49, "finalForecast": 49.5 },
+              { "quarter": "Q2 2024", "actual": 52, "aiForecast": 51, "finalForecast": 51.5 },
+              { "quarter": "Q3 2024", "actual": 54, "aiForecast": 53, "finalForecast": 53.5 },
+              { "quarter": "Q4 2024", "actual": 56, "aiForecast": 55, "finalForecast": 55.5 },
+              { "quarter": "Q1 2025", "actual": 58, "aiForecast": 57, "finalForecast": 57.5 },
+              { "quarter": "Q2 2025", "actual": 60, "aiForecast": 59, "finalForecast": 59.5 }
+            ],
+            "forecastData": [
+              { "quarter": "Q3 2025", "aiForecast": 62, "finalForecast": 63 },
+              { "quarter": "Q4 2025", "aiForecast": 64, "finalForecast": 65 },
+              { "quarter": "Q1 2026", "aiForecast": 66, "finalForecast": 67 },
+              { "quarter": "Q2 2026", "aiForecast": 68, "finalForecast": 69 },
+              { "quarter": "Q3 2026", "aiForecast": 70, "finalForecast": 71 }
+            ]
+          },
+          {
+            "cardId": "gdp",
+            "cardName": "GDP",
+            "historicalData": [
+              { "quarter": "Q1 2024", "actual": 100, "aiForecast": 98, "finalForecast": 99 },
+              { "quarter": "Q2 2024", "actual": 110, "aiForecast": 109, "finalForecast": 110 },
+              { "quarter": "Q3 2024", "actual": 115, "aiForecast": 114, "finalForecast": 115 },
+              { "quarter": "Q4 2024", "actual": 120, "aiForecast": 118, "finalForecast": 119 },
+              { "quarter": "Q1 2025", "actual": 125, "aiForecast": 123, "finalForecast": 124 },
+              { "quarter": "Q2 2025", "actual": 130, "aiForecast": 128, "finalForecast": 129 }
+            ],
+            "forecastData": [
+              { "quarter": "Q3 2025", "aiForecast": 135, "finalForecast": 138 },
+              { "quarter": "Q4 2025", "aiForecast": 140, "finalForecast": 142 },
+              { "quarter": "Q1 2026", "aiForecast": 145, "finalForecast": 148 },
+              { "quarter": "Q2 2026", "aiForecast": 150, "finalForecast": 152 },
+              { "quarter": "Q3 2026", "aiForecast": 155, "finalForecast": 158 }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "london",
+        "name": "London",
+        "coordinates": { "lat": 51.5074, "lng": -0.1278 },
+        "widgetData": [
+          { "quarter": "Q3 2025", "value": 98, "percentage": 28 },
+          { "quarter": "Q4 2025", "value": 112, "percentage": 35 },
+          { "quarter": "Q1 2026", "value": 124, "percentage": 48 },
+          { "quarter": "Q2 2026", "value": 108, "percentage": 32 },
+          { "quarter": "Q3 2026", "value": 132, "percentage": 55 }
+        ],
+        "detailSets": [
+          {
+            "cardId": "consumption",
+            "cardName": "Total Consumption",
+            "historicalData": [
+              { "quarter": "Q1 2024", "actual": 80, "aiForecast": 78, "finalForecast": 79 },
+              { "quarter": "Q2 2024", "actual": 85, "aiForecast": 84, "finalForecast": 85 },
+              { "quarter": "Q3 2024", "actual": 88, "aiForecast": 86, "finalForecast": 87 },
+              { "quarter": "Q4 2024", "actual": 92, "aiForecast": 90, "finalForecast": 91 },
+              { "quarter": "Q1 2025", "actual": 95, "aiForecast": 93, "finalForecast": 94 },
+              { "quarter": "Q2 2025", "actual": 100, "aiForecast": 98, "finalForecast": 99 }
+            ],
+            "forecastData": [
+              { "quarter": "Q3 2025", "aiForecast": 104, "finalForecast": 106 },
+              { "quarter": "Q4 2025", "aiForecast": 108, "finalForecast": 110 },
+              { "quarter": "Q1 2026", "aiForecast": 112, "finalForecast": 114 },
+              { "quarter": "Q2 2026", "aiForecast": 116, "finalForecast": 118 },
+              { "quarter": "Q3 2026", "aiForecast": 120, "finalForecast": 122 }
+            ]
+          },
+          {
+            "cardId": "peak_demand",
+            "cardName": "Peak Demand",
+            "historicalData": [
+              { "quarter": "Q1 2024", "actual": 70, "aiForecast": 68, "finalForecast": 69 },
+              { "quarter": "Q2 2024", "actual": 75, "aiForecast": 73, "finalForecast": 74 },
+              { "quarter": "Q3 2024", "actual": 78, "aiForecast": 76, "finalForecast": 77 },
+              { "quarter": "Q4 2024", "actual": 82, "aiForecast": 80, "finalForecast": 81 },
+              { "quarter": "Q1 2025", "actual": 85, "aiForecast": 83, "finalForecast": 84 },
+              { "quarter": "Q2 2025", "actual": 88, "aiForecast": 86, "finalForecast": 87 }
+            ],
+            "forecastData": [
+              { "quarter": "Q3 2025", "aiForecast": 92, "finalForecast": 93 },
+              { "quarter": "Q4 2025", "aiForecast": 96, "finalForecast": 97 },
+              { "quarter": "Q1 2026", "aiForecast": 100, "finalForecast": 101 },
+              { "quarter": "Q2 2026", "aiForecast": 104, "finalForecast": 105 },
+              { "quarter": "Q3 2026", "aiForecast": 108, "finalForecast": 109 }
+            ]
+          },
+          {
+            "cardId": "average_price",
+            "cardName": "Average Price",
+            "historicalData": [
+              { "quarter": "Q1 2024", "actual": 45, "aiForecast": 44, "finalForecast": 44.5 },
+              { "quarter": "Q2 2024", "actual": 47, "aiForecast": 46, "finalForecast": 46.5 },
+              { "quarter": "Q3 2024", "actual": 49, "aiForecast": 48, "finalForecast": 48.5 },
+              { "quarter": "Q4 2024", "actual": 51, "aiForecast": 50, "finalForecast": 50.5 },
+              { "quarter": "Q1 2025", "actual": 53, "aiForecast": 52, "finalForecast": 52.5 },
+              { "quarter": "Q2 2025", "actual": 55, "aiForecast": 54, "finalForecast": 54.5 }
+            ],
+            "forecastData": [
+              { "quarter": "Q3 2025", "aiForecast": 57, "finalForecast": 58 },
+              { "quarter": "Q4 2025", "aiForecast": 59, "finalForecast": 60 },
+              { "quarter": "Q1 2026", "aiForecast": 61, "finalForecast": 62 },
+              { "quarter": "Q2 2026", "aiForecast": 63, "finalForecast": 64 },
+              { "quarter": "Q3 2026", "aiForecast": 65, "finalForecast": 66 }
+            ]
+          },
+          {
+            "cardId": "gdp",
+            "cardName": "GDP",
+            "historicalData": [
+              { "quarter": "Q1 2024", "actual": 100, "aiForecast": 98, "finalForecast": 99 },
+              { "quarter": "Q2 2024", "actual": 110, "aiForecast": 109, "finalForecast": 110 },
+              { "quarter": "Q3 2024", "actual": 115, "aiForecast": 114, "finalForecast": 115 },
+              { "quarter": "Q4 2024", "actual": 120, "aiForecast": 118, "finalForecast": 119 },
+              { "quarter": "Q1 2025", "actual": 125, "aiForecast": 123, "finalForecast": 124 },
+              { "quarter": "Q2 2025", "actual": 130, "aiForecast": 128, "finalForecast": 129 }
+            ],
+            "forecastData": [
+              { "quarter": "Q3 2025", "aiForecast": 135, "finalForecast": 138 },
+              { "quarter": "Q4 2025", "aiForecast": 140, "finalForecast": 142 },
+              { "quarter": "Q1 2026", "aiForecast": 145, "finalForecast": 148 },
+              { "quarter": "Q2 2026", "aiForecast": 150, "finalForecast": 152 },
+              { "quarter": "Q3 2026", "aiForecast": 155, "finalForecast": 158 }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "tokyo",
+        "name": "Tokyo",
+        "coordinates": { "lat": 35.6764, "lng": 139.6500 },
+        "widgetData": [
+          { "quarter": "Q3 2025", "value": 165, "percentage": 42 },
+          { "quarter": "Q4 2025", "value": 178, "percentage": 48 },
+          { "quarter": "Q1 2026", "value": 192, "percentage": 55 },
+          { "quarter": "Q2 2026", "value": 185, "percentage": 51 },
+          { "quarter": "Q3 2026", "value": 198, "percentage": 58 }
+        ],
+        "detailSets": [
+          {
+            "cardId": "consumption",
+            "cardName": "Total Consumption",
+            "historicalData": [
+              { "quarter": "Q1 2024", "actual": 80, "aiForecast": 78, "finalForecast": 79 },
+              { "quarter": "Q2 2024", "actual": 85, "aiForecast": 84, "finalForecast": 85 },
+              { "quarter": "Q3 2024", "actual": 88, "aiForecast": 86, "finalForecast": 87 },
+              { "quarter": "Q4 2024", "actual": 92, "aiForecast": 90, "finalForecast": 91 },
+              { "quarter": "Q1 2025", "actual": 95, "aiForecast": 93, "finalForecast": 94 },
+              { "quarter": "Q2 2025", "actual": 100, "aiForecast": 98, "finalForecast": 99 }
+            ],
+            "forecastData": [
+              { "quarter": "Q3 2025", "aiForecast": 104, "finalForecast": 106 },
+              { "quarter": "Q4 2025", "aiForecast": 108, "finalForecast": 110 },
+              { "quarter": "Q1 2026", "aiForecast": 112, "finalForecast": 114 },
+              { "quarter": "Q2 2026", "aiForecast": 116, "finalForecast": 118 },
+              { "quarter": "Q3 2026", "aiForecast": 120, "finalForecast": 122 }
+            ]
+          },
+          {
+            "cardId": "peak_demand",
+            "cardName": "Peak Demand",
+            "historicalData": [
+              { "quarter": "Q1 2024", "actual": 70, "aiForecast": 68, "finalForecast": 69 },
+              { "quarter": "Q2 2024", "actual": 75, "aiForecast": 73, "finalForecast": 74 },
+              { "quarter": "Q3 2024", "actual": 78, "aiForecast": 76, "finalForecast": 77 },
+              { "quarter": "Q4 2024", "actual": 82, "aiForecast": 80, "finalForecast": 81 },
+              { "quarter": "Q1 2025", "actual": 85, "aiForecast": 83, "finalForecast": 84 },
+              { "quarter": "Q2 2025", "actual": 88, "aiForecast": 86, "finalForecast": 87 }
+            ],
+            "forecastData": [
+              { "quarter": "Q3 2025", "aiForecast": 92, "finalForecast": 93 },
+              { "quarter": "Q4 2025", "aiForecast": 96, "finalForecast": 97 },
+              { "quarter": "Q1 2026", "aiForecast": 100, "finalForecast": 101 },
+              { "quarter": "Q2 2026", "aiForecast": 104, "finalForecast": 105 },
+              { "quarter": "Q3 2026", "aiForecast": 108, "finalForecast": 109 }
+            ]
+          },
+          {
+            "cardId": "average_price",
+            "cardName": "Average Price",
+            "historicalData": [
+              { "quarter": "Q1 2024", "actual": 45, "aiForecast": 44, "finalForecast": 44.5 },
+              { "quarter": "Q2 2024", "actual": 47, "aiForecast": 46, "finalForecast": 46.5 },
+              { "quarter": "Q3 2024", "actual": 49, "aiForecast": 48, "finalForecast": 48.5 },
+              { "quarter": "Q4 2024", "actual": 51, "aiForecast": 50, "finalForecast": 50.5 },
+              { "quarter": "Q1 2025", "actual": 53, "aiForecast": 52, "finalForecast": 52.5 },
+              { "quarter": "Q2 2025", "actual": 55, "aiForecast": 54, "finalForecast": 54.5 }
+            ],
+            "forecastData": [
+              { "quarter": "Q3 2025", "aiForecast": 57, "finalForecast": 58 },
+              { "quarter": "Q4 2025", "aiForecast": 59, "finalForecast": 60 },
+              { "quarter": "Q1 2026", "aiForecast": 61, "finalForecast": 62 },
+              { "quarter": "Q2 2026", "aiForecast": 63, "finalForecast": 64 },
+              { "quarter": "Q3 2026", "aiForecast": 65, "finalForecast": 66 }
+            ]
+          },
+          {
+            "cardId": "gdp",
+            "cardName": "GDP",
+            "historicalData": [
+              { "quarter": "Q1 2024", "actual": 100, "aiForecast": 98, "finalForecast": 99 },
+              { "quarter": "Q2 2024", "actual": 110, "aiForecast": 109, "finalForecast": 110 },
+              { "quarter": "Q3 2024", "actual": 115, "aiForecast": 114, "finalForecast": 115 },
+              { "quarter": "Q4 2024", "actual": 120, "aiForecast": 118, "finalForecast": 119 },
+              { "quarter": "Q1 2025", "actual": 125, "aiForecast": 123, "finalForecast": 124 },
+              { "quarter": "Q2 2025", "actual": 130, "aiForecast": 128, "finalForecast": 129 }
+            ],
+            "forecastData": [
+              { "quarter": "Q3 2025", "aiForecast": 135, "finalForecast": 138 },
+              { "quarter": "Q4 2025", "aiForecast": 140, "finalForecast": 142 },
+              { "quarter": "Q1 2026", "aiForecast": 145, "finalForecast": 148 },
+              { "quarter": "Q2 2026", "aiForecast": 150, "finalForecast": 152 },
+              { "quarter": "Q3 2026", "aiForecast": 155, "finalForecast": 158 }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "paris",
+        "name": "Paris",
+        "coordinates": { "lat": 48.8566, "lng": 2.3522 },
+        "widgetData": [
+          { "quarter": "Q3 2025", "value": 128, "percentage": 35 },
+          { "quarter": "Q4 2025", "value": 142, "percentage": 42 },
+          { "quarter": "Q1 2026", "value": 155, "percentage": 49 },
+          { "quarter": "Q2 2026", "value": 148, "percentage": 45 },
+          { "quarter": "Q3 2026", "value": 162, "percentage": 52 }
+        ],
+        "detailSets": [
+          {
+            "cardId": "consumption",
+            "cardName": "Total Consumption",
+            "historicalData": [
+              { "quarter": "Q1 2024", "actual": 80, "aiForecast": 78, "finalForecast": 79 },
+              { "quarter": "Q2 2024", "actual": 85, "aiForecast": 84, "finalForecast": 85 },
+              { "quarter": "Q3 2024", "actual": 88, "aiForecast": 86, "finalForecast": 87 },
+              { "quarter": "Q4 2024", "actual": 92, "aiForecast": 90, "finalForecast": 91 },
+              { "quarter": "Q1 2025", "actual": 95, "aiForecast": 93, "finalForecast": 94 },
+              { "quarter": "Q2 2025", "actual": 100, "aiForecast": 98, "finalForecast": 99 }
+            ],
+            "forecastData": [
+              { "quarter": "Q3 2025", "aiForecast": 104, "finalForecast": 106 },
+              { "quarter": "Q4 2025", "aiForecast": 108, "finalForecast": 110 },
+              { "quarter": "Q1 2026", "aiForecast": 112, "finalForecast": 114 },
+              { "quarter": "Q2 2026", "aiForecast": 116, "finalForecast": 118 },
+              { "quarter": "Q3 2026", "aiForecast": 120, "finalForecast": 122 }
+            ]
+          },
+          {
+            "cardId": "peak_demand",
+            "cardName": "Peak Demand",
+            "historicalData": [
+              { "quarter": "Q1 2024", "actual": 70, "aiForecast": 68, "finalForecast": 69 },
+              { "quarter": "Q2 2024", "actual": 75, "aiForecast": 73, "finalForecast": 74 },
+              { "quarter": "Q3 2024", "actual": 78, "aiForecast": 76, "finalForecast": 77 },
+              { "quarter": "Q4 2024", "actual": 82, "aiForecast": 80, "finalForecast": 81 },
+              { "quarter": "Q1 2025", "actual": 85, "aiForecast": 83, "finalForecast": 84 },
+              { "quarter": "Q2 2025", "actual": 88, "aiForecast": 86, "finalForecast": 87 }
+            ],
+            "forecastData": [
+              { "quarter": "Q3 2025", "aiForecast": 92, "finalForecast": 93 },
+              { "quarter": "Q4 2025", "aiForecast": 96, "finalForecast": 97 },
+              { "quarter": "Q1 2026", "aiForecast": 100, "finalForecast": 101 },
+              { "quarter": "Q2 2026", "aiForecast": 104, "finalForecast": 105 },
+              { "quarter": "Q3 2026", "aiForecast": 108, "finalForecast": 109 }
+            ]
+          },
+          {
+            "cardId": "average_price",
+            "cardName": "Average Price",
+            "historicalData": [
+              { "quarter": "Q1 2024", "actual": 45, "aiForecast": 44, "finalForecast": 44.5 },
+              { "quarter": "Q2 2024", "actual": 47, "aiForecast": 46, "finalForecast": 46.5 },
+              { "quarter": "Q3 2024", "actual": 49, "aiForecast": 48, "finalForecast": 48.5 },
+              { "quarter": "Q4 2024", "actual": 51, "aiForecast": 50, "finalForecast": 50.5 },
+              { "quarter": "Q1 2025", "actual": 53, "aiForecast": 52, "finalForecast": 52.5 },
+              { "quarter": "Q2 2025", "actual": 55, "aiForecast": 54, "finalForecast": 54.5 }
+            ],
+            "forecastData": [
+              { "quarter": "Q3 2025", "aiForecast": 57, "finalForecast": 58 },
+              { "quarter": "Q4 2025", "aiForecast": 59, "finalForecast": 60 },
+              { "quarter": "Q1 2026", "aiForecast": 61, "finalForecast": 62 },
+              { "quarter": "Q2 2026", "aiForecast": 63, "finalForecast": 64 },
+              { "quarter": "Q3 2026", "aiForecast": 65, "finalForecast": 66 }
+            ]
+          },
+          {
+            "cardId": "gdp",
+            "cardName": "GDP",
+            "historicalData": [
+              { "quarter": "Q1 2024", "actual": 100, "aiForecast": 98, "finalForecast": 99 },
+              { "quarter": "Q2 2024", "actual": 110, "aiForecast": 109, "finalForecast": 110 },
+              { "quarter": "Q3 2024", "actual": 115, "aiForecast": 114, "finalForecast": 115 },
+              { "quarter": "Q4 2024", "actual": 120, "aiForecast": 118, "finalForecast": 119 },
+              { "quarter": "Q1 2025", "actual": 125, "aiForecast": 123, "finalForecast": 124 },
+              { "quarter": "Q2 2025", "actual": 130, "aiForecast": 128, "finalForecast": 129 }
+            ],
+            "forecastData": [
+              { "quarter": "Q3 2025", "aiForecast": 135, "finalForecast": 138 },
+              { "quarter": "Q4 2025", "aiForecast": 140, "finalForecast": 142 },
+              { "quarter": "Q1 2026", "aiForecast": 145, "finalForecast": 148 },
+              { "quarter": "Q2 2026", "aiForecast": 150, "finalForecast": 152 },
+              { "quarter": "Q3 2026", "aiForecast": 155, "finalForecast": 158 }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "delhi",
+        "name": "Delhi",
+        "coordinates": { "lat": 28.6139, "lng": 77.2090 },
+        "widgetData": [
+          { "quarter": "Q3 2025", "value": 145, "percentage": 38 },
+          { "quarter": "Q4 2025", "value": 158, "percentage": 45 },
+          { "quarter": "Q1 2026", "value": 172, "percentage": 52 },
+          { "quarter": "Q2 2026", "value": 165, "percentage": 48 },
+          { "quarter": "Q3 2026", "value": 178, "percentage": 55 }
+        ],
+        "detailSets": [
+          {
+            "cardId": "consumption",
+            "cardName": "Total Consumption",
+            "historicalData": [
+              { "quarter": "Q1 2024", "actual": 80, "aiForecast": 78, "finalForecast": 79 },
+              { "quarter": "Q2 2024", "actual": 85, "aiForecast": 84, "finalForecast": 85 },
+              { "quarter": "Q3 2024", "actual": 88, "aiForecast": 86, "finalForecast": 87 },
+              { "quarter": "Q4 2024", "actual": 92, "aiForecast": 90, "finalForecast": 91 },
+              { "quarter": "Q1 2025", "actual": 95, "aiForecast": 93, "finalForecast": 94 },
+              { "quarter": "Q2 2025", "actual": 100, "aiForecast": 98, "finalForecast": 99 }
+            ],
+            "forecastData": [
+              { "quarter": "Q3 2025", "aiForecast": 104, "finalForecast": 106 },
+              { "quarter": "Q4 2025", "aiForecast": 108, "finalForecast": 110 },
+              { "quarter": "Q1 2026", "aiForecast": 112, "finalForecast": 114 },
+              { "quarter": "Q2 2026", "aiForecast": 116, "finalForecast": 118 },
+              { "quarter": "Q3 2026", "aiForecast": 120, "finalForecast": 122 }
+            ]
+          },
+          {
+            "cardId": "peak_demand",
+            "cardName": "Peak Demand",
+            "historicalData": [
+              { "quarter": "Q1 2024", "actual": 70, "aiForecast": 68, "finalForecast": 69 },
+              { "quarter": "Q2 2024", "actual": 75, "aiForecast": 73, "finalForecast": 74 },
+              { "quarter": "Q3 2024", "actual": 78, "aiForecast": 76, "finalForecast": 77 },
+              { "quarter": "Q4 2024", "actual": 82, "aiForecast": 80, "finalForecast": 81 },
+              { "quarter": "Q1 2025", "actual": 85, "aiForecast": 83, "finalForecast": 84 },
+              { "quarter": "Q2 2025", "actual": 88, "aiForecast": 86, "finalForecast": 87 }
+            ],
+            "forecastData": [
+              { "quarter": "Q3 2025", "aiForecast": 92, "finalForecast": 93 },
+              { "quarter": "Q4 2025", "aiForecast": 96, "finalForecast": 97 },
+              { "quarter": "Q1 2026", "aiForecast": 100, "finalForecast": 101 },
+              { "quarter": "Q2 2026", "aiForecast": 104, "finalForecast": 105 },
+              { "quarter": "Q3 2026", "aiForecast": 108, "finalForecast": 109 }
+            ]
+          },
+          {
+            "cardId": "average_price",
+            "cardName": "Average Price",
+            "historicalData": [
+              { "quarter": "Q1 2024", "actual": 45, "aiForecast": 44, "finalForecast": 44.5 },
+              { "quarter": "Q2 2024", "actual": 47, "aiForecast": 46, "finalForecast": 46.5 },
+              { "quarter": "Q3 2024", "actual": 49, "aiForecast": 48, "finalForecast": 48.5 },
+              { "quarter": "Q4 2024", "actual": 51, "aiForecast": 50, "finalForecast": 50.5 },
+              { "quarter": "Q1 2025", "actual": 53, "aiForecast": 52, "finalForecast": 52.5 },
+              { "quarter": "Q2 2025", "actual": 55, "aiForecast": 54, "finalForecast": 54.5 }
+            ],
+            "forecastData": [
+              { "quarter": "Q3 2025", "aiForecast": 57, "finalForecast": 58 },
+              { "quarter": "Q4 2025", "aiForecast": 59, "finalForecast": 60 },
+              { "quarter": "Q1 2026", "aiForecast": 61, "finalForecast": 62 },
+              { "quarter": "Q2 2026", "aiForecast": 63, "finalForecast": 64 },
+              { "quarter": "Q3 2026", "aiForecast": 65, "finalForecast": 66 }
+            ]
+          },
+          {
+            "cardId": "gdp",
+            "cardName": "GDP",
+            "historicalData": [
+              { "quarter": "Q1 2024", "actual": 100, "aiForecast": 98, "finalForecast": 99 },
+              { "quarter": "Q2 2024", "actual": 110, "aiForecast": 109, "finalForecast": 110 },
+              { "quarter": "Q3 2024", "actual": 115, "aiForecast": 114, "finalForecast": 115 },
+              { "quarter": "Q4 2024", "actual": 120, "aiForecast": 118, "finalForecast": 119 },
+              { "quarter": "Q1 2025", "actual": 125, "aiForecast": 123, "finalForecast": 124 },
+              { "quarter": "Q2 2025", "actual": 130, "aiForecast": 128, "finalForecast": 129 }
+            ],
+            "forecastData": [
+              { "quarter": "Q3 2025", "aiForecast": 135, "finalForecast": 138 },
+              { "quarter": "Q4 2025", "aiForecast": 140, "finalForecast": 142 },
+              { "quarter": "Q1 2026", "aiForecast": 145, "finalForecast": 148 },
+              { "quarter": "Q2 2026", "aiForecast": 150, "finalForecast": 152 },
+              { "quarter": "Q3 2026", "aiForecast": 155, "finalForecast": 158 }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "mumbai",
+        "name": "Mumbai",
+        "coordinates": { "lat": 19.0760, "lng": 72.8777 },
+        "widgetData": [
+          { "quarter": "Q3 2025", "value": 138, "percentage": 36 },
+          { "quarter": "Q4 2025", "value": 152, "percentage": 43 },
+          { "quarter": "Q1 2026", "value": 165, "percentage": 50 },
+          { "quarter": "Q2 2026", "value": 158, "percentage": 46 },
+          { "quarter": "Q3 2026", "value": 172, "percentage": 53 }
+        ],
+        "detailSets": [
+          {
+            "cardId": "consumption",
+            "cardName": "Total Consumption",
+            "historicalData": [
+              { "quarter": "Q1 2024", "actual": 80, "aiForecast": 78, "finalForecast": 79 },
+              { "quarter": "Q2 2024", "actual": 85, "aiForecast": 84, "finalForecast": 85 },
+              { "quarter": "Q3 2024", "actual": 88, "aiForecast": 86, "finalForecast": 87 },
+              { "quarter": "Q4 2024", "actual": 92, "aiForecast": 90, "finalForecast": 91 },
+              { "quarter": "Q1 2025", "actual": 95, "aiForecast": 93, "finalForecast": 94 },
+              { "quarter": "Q2 2025", "actual": 100, "aiForecast": 98, "finalForecast": 99 }
+            ],
+            "forecastData": [
+              { "quarter": "Q3 2025", "aiForecast": 104, "finalForecast": 106 },
+              { "quarter": "Q4 2025", "aiForecast": 108, "finalForecast": 110 },
+              { "quarter": "Q1 2026", "aiForecast": 112, "finalForecast": 114 },
+              { "quarter": "Q2 2026", "aiForecast": 116, "finalForecast": 118 },
+              { "quarter": "Q3 2026", "aiForecast": 120, "finalForecast": 122 }
+            ]
+          },
+          {
+            "cardId": "peak_demand",
+            "cardName": "Peak Demand",
+            "historicalData": [
+              { "quarter": "Q1 2024", "actual": 70, "aiForecast": 68, "finalForecast": 69 },
+              { "quarter": "Q2 2024", "actual": 75, "aiForecast": 73, "finalForecast": 74 },
+              { "quarter": "Q3 2024", "actual": 78, "aiForecast": 76, "finalForecast": 77 },
+              { "quarter": "Q4 2024", "actual": 82, "aiForecast": 80, "finalForecast": 81 },
+              { "quarter": "Q1 2025", "actual": 85, "aiForecast": 83, "finalForecast": 84 },
+              { "quarter": "Q2 2025", "actual": 88, "aiForecast": 86, "finalForecast": 87 }
+            ],
+            "forecastData": [
+              { "quarter": "Q3 2025", "aiForecast": 92, "finalForecast": 93 },
+              { "quarter": "Q4 2025", "aiForecast": 96, "finalForecast": 97 },
+              { "quarter": "Q1 2026", "aiForecast": 100, "finalForecast": 101 },
+              { "quarter": "Q2 2026", "aiForecast": 104, "finalForecast": 105 },
+              { "quarter": "Q3 2026", "aiForecast": 108, "finalForecast": 109 }
+            ]
+          },
+          {
+            "cardId": "average_price",
+            "cardName": "Average Price",
+            "historicalData": [
+              { "quarter": "Q1 2024", "actual": 45, "aiForecast": 44, "finalForecast": 44.5 },
+              { "quarter": "Q2 2024", "actual": 47, "aiForecast": 46, "finalForecast": 46.5 },
+              { "quarter": "Q3 2024", "actual": 49, "aiForecast": 48, "finalForecast": 48.5 },
+              { "quarter": "Q4 2024", "actual": 51, "aiForecast": 50, "finalForecast": 50.5 },
+              { "quarter": "Q1 2025", "actual": 53, "aiForecast": 52, "finalForecast": 52.5 },
+              { "quarter": "Q2 2025", "actual": 55, "aiForecast": 54, "finalForecast": 54.5 }
+            ],
+            "forecastData": [
+              { "quarter": "Q3 2025", "aiForecast": 57, "finalForecast": 58 },
+              { "quarter": "Q4 2025", "aiForecast": 59, "finalForecast": 60 },
+              { "quarter": "Q1 2026", "aiForecast": 61, "finalForecast": 62 },
+              { "quarter": "Q2 2026", "aiForecast": 63, "finalForecast": 64 },
+              { "quarter": "Q3 2026", "aiForecast": 65, "finalForecast": 66 }
+            ]
+          },
+          {
+            "cardId": "gdp",
+            "cardName": "GDP",
+            "historicalData": [
+              { "quarter": "Q1 2024", "actual": 100, "aiForecast": 98, "finalForecast": 99 },
+              { "quarter": "Q2 2024", "actual": 110, "aiForecast": 109, "finalForecast": 110 },
+              { "quarter": "Q3 2024", "actual": 115, "aiForecast": 114, "finalForecast": 115 },
+              { "quarter": "Q4 2024", "actual": 120, "aiForecast": 118, "finalForecast": 119 },
+              { "quarter": "Q1 2025", "actual": 125, "aiForecast": 123, "finalForecast": 124 },
+              { "quarter": "Q2 2025", "actual": 130, "aiForecast": 128, "finalForecast": 129 }
+            ],
+            "forecastData": [
+              { "quarter": "Q3 2025", "aiForecast": 135, "finalForecast": 138 },
+              { "quarter": "Q4 2025", "aiForecast": 140, "finalForecast": 142 },
+              { "quarter": "Q1 2026", "aiForecast": 145, "finalForecast": 148 },
+              { "quarter": "Q2 2026", "aiForecast": 150, "finalForecast": 152 },
+              { "quarter": "Q3 2026", "aiForecast": 155, "finalForecast": 158 }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "seoul",
+        "name": "Seoul",
+        "coordinates": { "lat": 37.5665, "lng": 126.9780 },
+        "widgetData": [
+          { "quarter": "Q3 2025", "value": 152, "percentage": 40 },
+          { "quarter": "Q4 2025", "value": 165, "percentage": 47 },
+          { "quarter": "Q1 2026", "value": 178, "percentage": 54 },
+          { "quarter": "Q2 2026", "value": 172, "percentage": 50 },
+          { "quarter": "Q3 2026", "value": 185, "percentage": 57 }
+        ],
+        "detailSets": [
+          {
+            "cardId": "consumption",
+            "cardName": "Total Consumption",
+            "historicalData": [
+              { "quarter": "Q1 2024", "actual": 80, "aiForecast": 78, "finalForecast": 79 },
+              { "quarter": "Q2 2024", "actual": 85, "aiForecast": 84, "finalForecast": 85 },
+              { "quarter": "Q3 2024", "actual": 88, "aiForecast": 86, "finalForecast": 87 },
+              { "quarter": "Q4 2024", "actual": 92, "aiForecast": 90, "finalForecast": 91 },
+              { "quarter": "Q1 2025", "actual": 95, "aiForecast": 93, "finalForecast": 94 },
+              { "quarter": "Q2 2025", "actual": 100, "aiForecast": 98, "finalForecast": 99 }
+            ],
+            "forecastData": [
+              { "quarter": "Q3 2025", "aiForecast": 104, "finalForecast": 106 },
+              { "quarter": "Q4 2025", "aiForecast": 108, "finalForecast": 110 },
+              { "quarter": "Q1 2026", "aiForecast": 112, "finalForecast": 114 },
+              { "quarter": "Q2 2026", "aiForecast": 116, "finalForecast": 118 },
+              { "quarter": "Q3 2026", "aiForecast": 120, "finalForecast": 122 }
+            ]
+          },
+          {
+            "cardId": "peak_demand",
+            "cardName": "Peak Demand",
+            "historicalData": [
+              { "quarter": "Q1 2024", "actual": 70, "aiForecast": 68, "finalForecast": 69 },
+              { "quarter": "Q2 2024", "actual": 75, "aiForecast": 73, "finalForecast": 74 },
+              { "quarter": "Q3 2024", "actual": 78, "aiForecast": 76, "finalForecast": 77 },
+              { "quarter": "Q4 2024", "actual": 82, "aiForecast": 80, "finalForecast": 81 },
+              { "quarter": "Q1 2025", "actual": 85, "aiForecast": 83, "finalForecast": 84 },
+              { "quarter": "Q2 2025", "actual": 88, "aiForecast": 86, "finalForecast": 87 }
+            ],
+            "forecastData": [
+              { "quarter": "Q3 2025", "aiForecast": 92, "finalForecast": 93 },
+              { "quarter": "Q4 2025", "aiForecast": 96, "finalForecast": 97 },
+              { "quarter": "Q1 2026", "aiForecast": 100, "finalForecast": 101 },
+              { "quarter": "Q2 2026", "aiForecast": 104, "finalForecast": 105 },
+              { "quarter": "Q3 2026", "aiForecast": 108, "finalForecast": 109 }
+            ]
+          },
+          {
+            "cardId": "average_price",
+            "cardName": "Average Price",
+            "historicalData": [
+              { "quarter": "Q1 2024", "actual": 45, "aiForecast": 44, "finalForecast": 44.5 },
+              { "quarter": "Q2 2024", "actual": 47, "aiForecast": 46, "finalForecast": 46.5 },
+              { "quarter": "Q3 2024", "actual": 49, "aiForecast": 48, "finalForecast": 48.5 },
+              { "quarter": "Q4 2024", "actual": 51, "aiForecast": 50, "finalForecast": 50.5 },
+              { "quarter": "Q1 2025", "actual": 53, "aiForecast": 52, "finalForecast": 52.5 },
+              { "quarter": "Q2 2025", "actual": 55, "aiForecast": 54, "finalForecast": 54.5 }
+            ],
+            "forecastData": [
+              { "quarter": "Q3 2025", "aiForecast": 57, "finalForecast": 58 },
+              { "quarter": "Q4 2025", "aiForecast": 59, "finalForecast": 60 },
+              { "quarter": "Q1 2026", "aiForecast": 61, "finalForecast": 62 },
+              { "quarter": "Q2 2026", "aiForecast": 63, "finalForecast": 64 },
+              { "quarter": "Q3 2026", "aiForecast": 65, "finalForecast": 66 }
+            ]
+          },
+          {
+            "cardId": "gdp",
+            "cardName": "GDP",
+            "historicalData": [
+              { "quarter": "Q1 2024", "actual": 100, "aiForecast": 98, "finalForecast": 99 },
+              { "quarter": "Q2 2024", "actual": 110, "aiForecast": 109, "finalForecast": 110 },
+              { "quarter": "Q3 2024", "actual": 115, "aiForecast": 114, "finalForecast": 115 },
+              { "quarter": "Q4 2024", "actual": 120, "aiForecast": 118, "finalForecast": 119 },
+              { "quarter": "Q1 2025", "actual": 125, "aiForecast": 123, "finalForecast": 124 },
+              { "quarter": "Q2 2025", "actual": 130, "aiForecast": 128, "finalForecast": 129 }
+            ],
+            "forecastData": [
+              { "quarter": "Q3 2025", "aiForecast": 135, "finalForecast": 138 },
+              { "quarter": "Q4 2025", "aiForecast": 140, "finalForecast": 142 },
+              { "quarter": "Q1 2026", "aiForecast": 145, "finalForecast": 148 },
+              { "quarter": "Q2 2026", "aiForecast": 150, "finalForecast": 152 },
+              { "quarter": "Q3 2026", "aiForecast": 155, "finalForecast": 158 }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "dubai",
+        "name": "Dubai",
+        "coordinates": { "lat": 25.276987, "lng": 55.296233 },
+        "widgetData": [
+          { "quarter": "Q3 2025", "value": 135, "percentage": 37 },
+          { "quarter": "Q4 2025", "value": 148, "percentage": 44 },
+          { "quarter": "Q1 2026", "value": 162, "percentage": 51 },
+          { "quarter": "Q2 2026", "value": 155, "percentage": 47 },
+          { "quarter": "Q3 2026", "value": 168, "percentage": 54 }
+        ],
+        "detailSets": [
+          {
+            "cardId": "consumption",
+            "cardName": "Total Consumption",
+            "historicalData": [
+              { "quarter": "Q1 2024", "actual": 80, "aiForecast": 78, "finalForecast": 79 },
+              { "quarter": "Q2 2024", "actual": 85, "aiForecast": 84, "finalForecast": 85 },
+              { "quarter": "Q3 2024", "actual": 88, "aiForecast": 86, "finalForecast": 87 },
+              { "quarter": "Q4 2024", "actual": 92, "aiForecast": 90, "finalForecast": 91 },
+              { "quarter": "Q1 2025", "actual": 95, "aiForecast": 93, "finalForecast": 94 },
+              { "quarter": "Q2 2025", "actual": 100, "aiForecast": 98, "finalForecast": 99 }
+            ],
+            "forecastData": [
+              { "quarter": "Q3 2025", "aiForecast": 104, "finalForecast": 106 },
+              { "quarter": "Q4 2025", "aiForecast": 108, "finalForecast": 110 },
+              { "quarter": "Q1 2026", "aiForecast": 112, "finalForecast": 114 },
+              { "quarter": "Q2 2026", "aiForecast": 116, "finalForecast": 118 },
+              { "quarter": "Q3 2026", "aiForecast": 120, "finalForecast": 122 }
+            ]
+          },
+          {
+            "cardId": "peak_demand",
+            "cardName": "Peak Demand",
+            "historicalData": [
+              { "quarter": "Q1 2024", "actual": 70, "aiForecast": 68, "finalForecast": 69 },
+              { "quarter": "Q2 2024", "actual": 75, "aiForecast": 73, "finalForecast": 74 },
+              { "quarter": "Q3 2024", "actual": 78, "aiForecast": 76, "finalForecast": 77 },
+              { "quarter": "Q4 2024", "actual": 82, "aiForecast": 80, "finalForecast": 81 },
+              { "quarter": "Q1 2025", "actual": 85, "aiForecast": 83, "finalForecast": 84 },
+              { "quarter": "Q2 2025", "actual": 88, "aiForecast": 86, "finalForecast": 87 }
+            ],
+            "forecastData": [
+              { "quarter": "Q3 2025", "aiForecast": 92, "finalForecast": 93 },
+              { "quarter": "Q4 2025", "aiForecast": 96, "finalForecast": 97 },
+              { "quarter": "Q1 2026", "aiForecast": 100, "finalForecast": 101 },
+              { "quarter": "Q2 2026", "aiForecast": 104, "finalForecast": 105 },
+              { "quarter": "Q3 2026", "aiForecast": 108, "finalForecast": 109 }
+            ]
+          },
+          {
+            "cardId": "average_price",
+            "cardName": "Average Price",
+            "historicalData": [
+              { "quarter": "Q1 2024", "actual": 45, "aiForecast": 44, "finalForecast": 44.5 },
+              { "quarter": "Q2 2024", "actual": 47, "aiForecast": 46, "finalForecast": 46.5 },
+              { "quarter": "Q3 2024", "actual": 49, "aiForecast": 48, "finalForecast": 48.5 },
+              { "quarter": "Q4 2024", "actual": 51, "aiForecast": 50, "finalForecast": 50.5 },
+              { "quarter": "Q1 2025", "actual": 53, "aiForecast": 52, "finalForecast": 52.5 },
+              { "quarter": "Q2 2025", "actual": 55, "aiForecast": 54, "finalForecast": 54.5 }
+            ],
+            "forecastData": [
+              { "quarter": "Q3 2025", "aiForecast": 57, "finalForecast": 58 },
+              { "quarter": "Q4 2025", "aiForecast": 59, "finalForecast": 60 },
+              { "quarter": "Q1 2026", "aiForecast": 61, "finalForecast": 62 },
+              { "quarter": "Q2 2026", "aiForecast": 63, "finalForecast": 64 },
+              { "quarter": "Q3 2026", "aiForecast": 65, "finalForecast": 66 }
+            ]
+          },
+          {
+            "cardId": "gdp",
+            "cardName": "GDP",
+            "historicalData": [
+              { "quarter": "Q1 2024", "actual": 100, "aiForecast": 98, "finalForecast": 99 },
+              { "quarter": "Q2 2024", "actual": 110, "aiForecast": 109, "finalForecast": 110 },
+              { "quarter": "Q3 2024", "actual": 115, "aiForecast": 114, "finalForecast": 115 },
+              { "quarter": "Q4 2024", "actual": 120, "aiForecast": 118, "finalForecast": 119 },
+              { "quarter": "Q1 2025", "actual": 125, "aiForecast": 123, "finalForecast": 124 },
+              { "quarter": "Q2 2025", "actual": 130, "aiForecast": 128, "finalForecast": 129 }
+            ],
+            "forecastData": [
+              { "quarter": "Q3 2025", "aiForecast": 135, "finalForecast": 138 },
+              { "quarter": "Q4 2025", "aiForecast": 140, "finalForecast": 142 },
+              { "quarter": "Q1 2026", "aiForecast": 145, "finalForecast": 148 },
+              { "quarter": "Q2 2026", "aiForecast": 150, "finalForecast": 152 },
+              { "quarter": "Q3 2026", "aiForecast": 155, "finalForecast": 158 }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  
