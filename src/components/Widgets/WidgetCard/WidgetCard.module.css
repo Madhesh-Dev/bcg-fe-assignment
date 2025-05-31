@@ -1,20 +1,26 @@
 .card {
+    display: flow-root;
     position: relative;
-    padding: 20px;
-    border-radius: 4px;
-    background: #fff;
-    opacity: 1;
-    z-index: 1;
+    padding: 1.3rem;
+    color: #fff;
+    z-index: 6;
+    margin-bottom: 20px;
 }
 
 .card::before {
     content: "";
     position: absolute;
-    top: -2px;
-    left: -2px;
-    right: -2px;
-    bottom: -2px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     border-radius: 4px;
-    background: linear-gradient(45deg, blue, green);
-    z-index: -1;
+    border: 2px solid transparent;
+    background: linear-gradient(45deg, purple, orange) border-box;
+    mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    z-index: 5;
 }
