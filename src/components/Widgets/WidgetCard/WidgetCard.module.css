@@ -1,0 +1,20 @@
+.card {
+    position: relative;
+    padding: 20px;
+    border-radius: 4px;
+    background: #fff;
+    opacity: 1;
+    z-index: 1;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: 4px;
+    background: linear-gradient(45deg, blue, green);
+    z-index: -1;
+}
