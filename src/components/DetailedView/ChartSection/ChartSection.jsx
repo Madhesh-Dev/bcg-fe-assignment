@@ -4,6 +4,7 @@ import useChartSection from "./useChartSection";
 import React from "react";
 
 const options = {
+    animation: false,
     responsive: true,
     plugins: {
         legend: {
