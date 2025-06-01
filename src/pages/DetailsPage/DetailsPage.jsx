@@ -5,11 +5,14 @@ import FloatingChatIcon from "./FloatingChatIcon";
 import SidePanel from "@/components/SidePanel/SidePanel";
 import DetailedView from "@/components/DetailedView/DetailedView";
 import inventoryMockData from "../../data/inventoryMockData.json";
+import { useParams } from "react-router-dom";
 
 function DetailsPage() {
     const { cities = [] } = inventoryMockData;
 
-    const sampleData = cities[0].detailSets;
+    const params = useParams();
+
+    const sampleData = cities.find((city) => city.id === params.id).detailSets;
 
     const [isSidebarOpen, setIsSidebarOpen] = useState(true);
     const [selectedCard, setSelectedCard] = useState(sampleData[0]?.cardId);
