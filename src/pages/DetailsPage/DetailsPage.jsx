@@ -1,21 +1,28 @@
-import  { useRef, useState } from 'react';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import classes from './DetailsPage.module.css';
 import FloatingChatIcon from './FloatingChatIcon';
 import SidePanel from '@/components/SidePanel/SidePanel';
 import DetailedView from '@/components/DetailedView/DetailedView';
+import inventoryMockData from '../../data/inventoryMockData.json';
 
 function DetailsPage() {
-	const containerRef = useRef(null);
+	const { cities = [] } = inventoryMockData;
+
+	const sampleData = cities[0].detailSets;
 
 	const [isSidebarOpen, setIsSidebarOpen] = useState(true);
-	const [isDragging, setIsDragging] = useState(false);
+	const [selectedCard, setSelectedCard] = useState(sampleData[0]?.cardId);
 
 	let animationClass = 'collapsed';
 
 	if (isSidebarOpen) {
 		animationClass = 'open';
 	}
+
+	const filteredSelectedData = sampleData.find(
+		(card) => card.cardId === selectedCard,
+	);
 
 	return (
 		<div className={classes['details-page-container']}>
@@ -48,17 +55,16 @@ function DetailsPage() {
 					stiffness: 100,
 					damping: 15,
 				}}
-				drag={false}
-				onDragStart={() => setIsDragging(true)}
-				dragConstraints={containerRef}
-				dragElastic={0.1}
-				onDragEnd={() => {
-					setIsDragging(false);
-				}}
 			>
 				{isSidebarOpen && (
 					<div className={classes.side_panel}>
-						<SidePanel />
+						<div className={classes.overlay_text} />
+						<SidePanel
+							setIsSidebarOpen={setIsSidebarOpen}
+							setSelectedCard={setSelectedCard}
+							selectedCard={selectedCard}
+							sampleData={sampleData}
+						/>
 					</div>
 				)}
 				{!isSidebarOpen && (
@@ -66,9 +72,6 @@ function DetailsPage() {
 						className={classes.chat_icon_container}
 						role="presentation"
 						onClick={() => {
-							if (isDragging) {
-								return;
-							}
 							setIsSidebarOpen(true);
 						}}
 					>
@@ -96,7 +99,11 @@ function DetailsPage() {
 					},
 				}}
 			>
-				<DetailedView />
+				<DetailedView
+					selectedCard={selectedCard}
+					setSelectedCard={setSelectedCard}
+					filteredSelectedData={filteredSelectedData}
+				/>
 			</motion.div>
 		</div>
 	);
