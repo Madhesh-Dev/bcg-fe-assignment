@@ -9,7 +9,6 @@
     min-width: 200px; /* Makes it scrollable if more than 6 cards */
     max-width: 200px;
     height: 150px;
-    /* background-color: white; */
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -17,18 +16,16 @@
     justify-content: center;
 }
 
-
 .scrollContainer {
     overflow-x: auto;
     padding: 20px 0;
-    margin:0px 60px;
+    margin: 0px 60px;
     position: relative;
     z-index: 6;
-    /* Hides scrollbar (for modern browsers) */
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* IE/Edge */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
 
 .scrollContainer::-webkit-scrollbar {
-    display: none; /* Chrome/Safari */
+    display: none;
 }
