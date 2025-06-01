@@ -10,17 +10,18 @@ export default function LandingPage() {
     const cities = mockData.cities;
     return (
         <div className={classes["landing-container"]}>
-            <div className={classes["userinfo-widgets-container"]}>
-                <h1>Hello User,</h1>
+            <div className={classes["inner-container"]}>
+                <div className={classes["userinfo-widgets-container"]}>
+                    <h1>Hello User,</h1>
 
-                <div className={classes["action-items"]}>
-                    <InfoOutlineIcon sx={{ fontSize: 14 }} />
-                    There are 2 active actions
+                    <div className={classes["action-items"]}>
+                        <InfoOutlineIcon sx={{ fontSize: 14 }} />
+                        There are 2 active actions
+                    </div>
                 </div>
+
+                <CardsWidget cards={cities} />
             </div>
-
-            <CardsWidget cards={cities} />
-
             <Map />
         </div>
     );

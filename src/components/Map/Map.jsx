@@ -65,7 +65,7 @@ function MapComponent() {
 
     const handleMapLoad = useCallback(() => {
         mapRef.current?.flyTo({
-            center: [10, 56],
+            center: [10, 60],
             zoom: 1.8,
             duration: 3000,
         });
@@ -114,6 +114,9 @@ function MapComponent() {
                         closeOnClick={false}
                         maxWidth="fit-content"
                         closeOnMove={true}
+                        style={{
+                            zIndex: 99999,
+                        }}
                     >
                         <div>City Name: {popupInfo.name}</div>
 

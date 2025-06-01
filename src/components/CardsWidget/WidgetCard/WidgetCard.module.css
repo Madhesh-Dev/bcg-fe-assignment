@@ -1,14 +1,14 @@
 .card {
     position: relative;
-    padding: 1.3rem;
     color: #fff;
-    width: 200px;
+    padding: 1.2rem;
     z-index: 6;
     margin-bottom: 20px;
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(1px);
     -webkit-backdrop-filter: blur(1px);
+    flex: 0 0 calc((100% - 80px) / 6);
 }
 
 .city-name {
@@ -20,12 +20,13 @@
     justify-content: space-between;
     align-items: flex-end;
     margin-top: 24px;
+    gap: 6px;
 }
 
 .chart-wrapper {
     position: relative;
     z-index: 10;
-    height: 45px;
+    height: 40px;
 }
 
 .title {
@@ -55,4 +56,46 @@
     -webkit-mask-composite: destination-out;
     mask-composite: exclude;
     z-index: 5;
+}
+
+@media screen and (max-width: 768px) {
+    .city-name {
+        font-size: 16px;
+    }
+
+    .title {
+        font-size: 10px;
+    }
+
+    .value {
+        font-size: 20px;
+    }
+
+    .forecast-metric {
+        margin-top: 20px;
+    }
+
+    svg {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .city-name {
+        font-size: 14px;
+    }
+
+    .value {
+        font-size: 16px;
+    }
+
+    .forecast-metric {
+        margin-top: 16px;
+    }
+
+    svg {
+        width: 14px;
+        height: 14px;
+    }
 }

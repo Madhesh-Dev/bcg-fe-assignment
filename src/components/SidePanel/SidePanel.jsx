@@ -2,10 +2,10 @@ import KeyboardDoubleArrowLeftIcon from "@mui/icons-material/KeyboardDoubleArrow
 import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
 import { Tabs, Tab, Checkbox, Typography, IconButton } from "@mui/material";
 import { useState } from "react";
-import { MailOutline } from "@mui/icons-material";
+import { MailOutline, PanoramaSharp } from "@mui/icons-material";
 import classes from "./SidePanel.module.css";
 import inventoryMockData from "../../data/inventoryMockData.json";
-import { useNavigate } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 
 function StackCard({ details = {}, selectedCard, setSelectedCard }) {
     const { cardName, cardId } = details;
@@ -70,11 +70,15 @@ function SidePanel({
 }) {
     const navigate = useNavigate();
 
+    const params = useParams();
+
     const [tabIndex, setTabIndex] = useState(0);
 
     const { cities = [] } = inventoryMockData;
 
-    const sampleData = cities[0].detailSets;
+    const cityIndex = cities.findIndex((city) => city.id === params.id);
+
+    const sampleData = cities[cityIndex].detailSets;
 
     return (
         <div className={classes.side_panel}>
