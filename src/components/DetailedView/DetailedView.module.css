@@ -1,68 +1,68 @@
 .container {
     color: #fff;
-  }
+}
 
-  .chart_section {
+.chart_section {
     background-color: #0d1b2a;
-    padding: 12px 48px;
+    padding: 12px 24px;
     border-radius: 4px;
-  }
-  
-  .header {
+}
+
+.header {
     display: flex;
     justify-content: space-between;
     padding: 24px 20px 20px 48px;
     border-bottom: 4px solid #0d1b2a;
     margin-top: auto;
-  }
-  
-  .stackInfo {
+}
+
+.stackInfo {
     flex: 1;
     margin-left: 16px;
     margin-top: auto;
-  }
-  
-  .title {
+}
+
+.title {
     font-size: 14px;
     margin: 0;
     color: #fff;
     margin-bottom: 2px;
-  }
-  
-  .stackId {
+}
+
+.stackId {
     font-size: 12px;
     color: #9ca3af;
-  }
-  
-  .controls {
+}
+
+.controls {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px 48px;
+    padding: 12px 24px;
     border-bottom: 1px solid #1e2a38;
-  }
-  
-  .switchContainer,
-  .dropdownContainer {
+}
+
+.switchContainer,
+.dropdownContainer {
     display: flex;
     align-items: center;
     gap: 12px;
-  }
-  
-  .switch {
+}
+
+.switch {
     position: relative;
     display: inline-block;
-    width: 34px;
-    height: 20px;
-  }
-  
-  .switch input {
+    width: 36px;
+    height: 16px;
+}
+
+.switch input {
     opacity: 0;
     width: 0;
     height: 0;
-  }
-  
-  .slider {
+}
+
+.slider {
     position: absolute;
     cursor: pointer;
     background-color: #ccc;
@@ -72,123 +72,117 @@
     right: 0;
     bottom: 0;
     transition: 0.4s;
-  }
-  
-  .slider:before {
+}
+
+.slider:before {
     position: absolute;
     content: "";
-    height: 14px;
-    width: 14px;
-    left: 3px;
-    bottom: 3px;
+    height: 12px;
+    width: 12px;
+    left: 2px;
+    bottom: 2px;
     background-color: white;
     transition: 0.4s;
     border-radius: 50%;
-  }
-  
-  input:checked + .slider {
+}
+
+input:checked + .slider {
     background-color: #38bdf8;
-  }
-  
-  input:checked + .slider:before {
-    transform: translateX(14px);
-  }
-  
-  .dataTable {
+}
+
+input:checked + .slider:before {
+    transform: translateX(19px);
+}
+
+.dataTable {
     margin-top: 20px;
     background-color: #121e2e;
     border-radius: 4px;
     padding: 12px 20px;
-  }
-  
-  .row {
+}
+
+.row {
     display: flex;
     justify-content: space-between;
     padding: 6px 0;
     font-size: 14px;
     color: #e0e0e0;
     border-bottom: 1px solid #1e2a38;
-  }
-  
-  .row:last-child {
+}
+
+.row:last-child {
     border-bottom: none;
-  }
-  
-  .header {
+}
+
+.header {
     background-color: #0d2533;
     color: #fff;
     display: flex;
     align-items: center;
     padding: 12px 24px;
     justify-content: space-between;
-    font-family: 'Segoe UI', sans-serif;
-  }
-  
-  .leftSection {
+    font-family: "Segoe UI", sans-serif;
+}
+
+.leftSection {
     display: flex;
     align-items: center;
     gap: 12px;
     margin-top: auto;
-  }
-  
-  .iconWarning {
+}
+
+.iconWarning {
     color: #facc15; /* yellow-400 */
     font-size: 20px;
-  }
-  
-  .title {
-    font-weight: bold;
-    font-size: 16px;
-  }
-  
-  .divider {
+}
+
+.divider {
     height: 24px;
     width: 1px;
     background-color: #2c3e50;
-  }
-  
-  .stackIdLabel {
+}
+
+.stackIdLabel {
     font-size: 13px;
     color: #9ca3af;
     margin-left: 48px;
-  }
-  
-  .stackIdValue {
+}
+
+.stackIdValue {
     color: #fff;
     margin-left: 4px;
-  }
-  
-  .tableIcon {
+}
+
+.tableIcon {
     color: #5eead4; /* teal-300 */
     cursor: pointer;
-  }
-  
-  .forecastBox {
+}
+
+.forecastBox {
     display: flex;
     background-color: #153443;
     padding: 6px 12px;
     border-radius: 12px;
     gap: 48px;
-  }
-  
-  .forecastCard {
+}
+
+.forecastCard {
     text-align: left;
-  }
-  
-  .forecastLabel {
+}
+
+.forecastLabel {
     font-size: 10px;
     color: #9ca3af;
     margin-bottom: 8px;
-  }
-  
-  .forecastValue {
+}
+
+.forecastValue {
     font-weight: bold;
     font-size: 14px;
-  }
-  
-  .flagIcon {
+}
+
+.flagIcon {
     font-size: 20px;
     color: #9ca3af;
     cursor: pointer;
-  }
-  
+}

@@ -1,0 +1,105 @@
+.legends-container {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    font-size: 12px;
+    margin-bottom: 16px;
+}
+
+.historical {
+    flex: 1;
+}
+
+.historical-legend-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.historical-ai,
+.historical-final-switch {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.vertical-line-ai,
+.vertical-line-final {
+    width: 3px;
+    align-self: stretch;
+}
+
+.vertical-line-ai {
+    background-color: #5cc25d;
+}
+
+.vertical-line-final {
+    background-color: #c9b244;
+}
+
+.historical-final,
+.historical-consumption {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.title,
+.historical-title {
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+.historical-title {
+    text-align: right;
+}
+
+.title {
+    color: #00bfff;
+}
+
+.historical-consumption-legend,
+.forecast-legend-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.forecast {
+    flex: 1;
+}
+
+.forecast-legend-container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.dashed-line,
+.solid-line {
+    width: 14px;
+    height: 2px;
+    margin-top: 2px;
+    border-top: 2px dotted;
+}
+
+.progress-container {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.solid-line {
+    border-top: 2px solid #6ac4e5;
+}
+
+.ai {
+    border-top-color: #5cc25d;
+}
+
+.final {
+    border-top-color: #c9b244;
+}
+
+.previous {
+    border-top-color: #cfb6b1;
+}
