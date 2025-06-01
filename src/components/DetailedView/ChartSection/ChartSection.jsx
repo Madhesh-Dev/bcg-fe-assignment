@@ -77,7 +77,7 @@ function ChartSection({ selectedCard }) {
 		mergedData.forEach((item, index) => {
 			const { quarter, actual, aiForecast, finalForecast } = item;
 
-			labels.push(quarter);
+            labels.push(quarter.split(" "));
 
 			if (index < historicalData.length) {
 				hForecast[index] = finalForecast;
