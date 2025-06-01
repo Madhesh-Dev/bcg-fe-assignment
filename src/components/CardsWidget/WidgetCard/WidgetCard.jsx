@@ -105,7 +105,7 @@ function WidgetCard({ card }) {
             <div className={classes["city-name"]}>{card.name}</div>
 
             <div className={classes["forecast-metric"]}>
-                <div className={classes["metric-value"]}>
+                <div>
                     <div className={classes["title"]}>Forecast</div>
                     <div className={classes["value"]}>
                         {widgetData?.[0]?.value}
@@ -120,10 +120,10 @@ function WidgetCard({ card }) {
             </div>
 
             <div className={classes["forecast-metric"]}>
-                <div className={classes["metric-value"]}>
+                <div>
                     <div className={classes["title"]}>Forecast</div>
                     <div className={classes["value"]}>
-                        {widgetData?.[0]?.percentage}
+                        {widgetData?.[0]?.percentage}%
                     </div>
                 </div>
 
