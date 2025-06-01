@@ -1,0 +1,56 @@
+.card {
+    position: relative;
+    padding: 1.3rem;
+    color: #fff;
+    width: 200px;
+    z-index: 6;
+    margin-bottom: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 40px rgba(0, 0, 0, 0.3);
+}
+
+.city-name {
+    font-size: 18px;
+}
+
+.forecast-metric {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 24px;
+}
+
+.chart-wrapper {
+    position: relative;
+    z-index: 10;
+    height: 45px;
+}
+
+.title {
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+.value {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    background: linear-gradient(180deg, rgb(58, 58, 240), rgb(150, 234, 150))
+        border-box;
+    mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    z-index: 5;
+}

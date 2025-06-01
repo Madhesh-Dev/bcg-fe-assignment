@@ -6,4 +6,5 @@
 
 .userinfo-widgets-container {
     padding: 32px 64px;
+    z-index:6;
 }
