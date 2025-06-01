@@ -1,5 +1,5 @@
 import Map, { Source, Layer, Popup, useMap } from "react-map-gl";
-import React, { useState } from "react";
+import React, { useRef, useState, useCallback } from "react";
 import "mapbox-gl/dist/mapbox-gl.css";
 import classes from "./Map.module.css";
 import mockData from "@/data/inventoryMockData.json";
@@ -21,6 +21,8 @@ function MapImage() {
 
 function MapComponent() {
     const [popupInfo, setPopupInfo] = useState(null);
+
+    const mapRef = useRef(null);
 
     const cities = mockData.cities;
 
@@ -61,9 +63,18 @@ function MapComponent() {
         })),
     };
 
+    const handleMapLoad = useCallback(() => {
+        mapRef.current?.flyTo({
+            center: [10, 56],
+            zoom: 1.8,
+            duration: 3000,
+        });
+    }, []);
+
     return (
         <div className={classes["map-container"]}>
             <Map
+                ref={mapRef}
                 reuseMaps={true}
                 mapStyle="mapbox://styles/mapbox/dark-v9"
                 mapboxAccessToken={import.meta.env.VITE_MAPBOX_ACCESS_TOKEN}
@@ -72,6 +83,7 @@ function MapComponent() {
                 onClick={handleMouseEvent}
                 onMouseEnter={handleMouseEvent}
                 onMouseLeave={() => setPopupInfo(null)}
+                onLoad={handleMapLoad}
             >
                 <MapImage />
 
