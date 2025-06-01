@@ -1,15 +1,17 @@
 import mockData from "@/data/inventoryMockData.json";
 import { useMemo, useState } from "react";
+import { useParams } from "react-router-dom";
 
 const useChartSection = ({ selectedCard }) => {
-    const cityId = "new_york";
+    const params = useParams();
+
     const [toggleContent, setToggleContent] = useState({
         ai: true,
         final: true,
     });
 
     const activeCityIndex = mockData.cities.findIndex(
-        (city) => city.id === cityId
+        (city) => city.id === params.id
     );
     const activeCardIndex = mockData.cities[
         activeCityIndex
@@ -17,6 +19,7 @@ const useChartSection = ({ selectedCard }) => {
 
     const {
         labels,
+        options,
         hForecast,
         hAiForecast,
         hConsumption,
@@ -53,8 +56,66 @@ const useChartSection = ({ selectedCard }) => {
             }
         });
 
+        const options = {
+            animation: false,
+            responsive: true,
+            plugins: {
+                legend: {
+                    display: false,
+                },
+                title: {
+                    display: false,
+                },
+                annotation: {
+                    annotations: {
+                        line1: {
+                            type: "line",
+                            xMin: historicalData.length - 0.5,
+                            xMax: historicalData.length - 0.5,
+                            borderColor: "#DCDCDC",
+                            borderWidth: 2,
+                            borderDash: [3, 3],
+                            adjustScaleRange: false,
+                        },
+                    },
+                },
+            },
+            scales: {
+                x: {
+                    title: {
+                        display: false,
+                    },
+                    grid: {
+                        display: true,
+                        color: "#6bc8f0",
+                    },
+                    ticks: {
+                        color: "#fff",
+                    },
+                },
+                y: {
+                    title: {
+                        display: true,
+                        text: "CONSUMPTION(FT,THOUSANDS)",
+                        color: "#fff",
+                    },
+                    ticks: {
+                        display: true,
+                        color: "#fff",
+                        font: {
+                            size: 12,
+                        },
+                    },
+                    grid: {
+                        display: false,
+                    },
+                },
+            },
+        };
+
         return {
             labels,
+            options,
             hForecast,
             hAiForecast,
             hConsumption,
@@ -102,7 +163,7 @@ const useChartSection = ({ selectedCard }) => {
             },
             {
                 label: "Previous Quarter Final Forecast",
-                data: [120, 40, 60, 80],
+                data: [null, null, null, null, 100, 95, 85, 105, 90, 110],
                 borderColor: "#cfb6b1",
                 borderDash: [5, 5],
             },
@@ -111,6 +172,7 @@ const useChartSection = ({ selectedCard }) => {
 
     return {
         data,
+        options,
         toggleContent,
         setToggleContent,
     };

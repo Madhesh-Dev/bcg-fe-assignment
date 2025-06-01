@@ -1,7 +1,7 @@
 .legends-container {
     display: flex;
     align-items: center;
-    gap: 32px;
+    gap: 120px;
     font-size: 12px;
     margin-bottom: 16px;
 }

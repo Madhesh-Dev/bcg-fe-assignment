@@ -68,25 +68,45 @@ export default function DetailedView({
 
             <div className={classes.dataTable}>
                 <div className={classes.row}>
-                    <span style={{ marginRight: "20px" }}>Data 1</span>
+                    <span style={{ marginRight: "20px", minWidth: "90px" }}>
+                        Consumption
+                    </span>
                     {mergedData.map((item, index) => (
-                        <span key={index} style={{ minWidth: "72px" }}>
+                        <span
+                            key={index}
+                            style={{ minWidth: "65px", textAlign: "center" }}
+                        >
                             {item.actual}
                         </span>
                     ))}
                 </div>
                 <div className={classes.row}>
-                    <span style={{ marginRight: "20px" }}>Data 1</span>
+                    <span
+                        style={{
+                            marginRight: "20px",
+                            minWidth: "90px",
+                        }}
+                    >
+                        AI
+                    </span>
                     {mergedData.map((item, index) => (
-                        <span key={index} style={{ minWidth: "72px" }}>
+                        <span
+                            key={index}
+                            style={{ minWidth: "65px", textAlign: "center" }}
+                        >
                             {item.finalForecast}
                         </span>
                     ))}
                 </div>
                 <div className={classes.row}>
-                    <span style={{ marginRight: "20px" }}>Data 1</span>
+                    <span style={{ marginRight: "20px", minWidth: "90px" }}>
+                        Final
+                    </span>
                     {mergedData.map((item, index) => (
-                        <span key={index} style={{ minWidth: "72px" }}>
+                        <span
+                            key={index}
+                            style={{ minWidth: "65px", textAlign: "center" }}
+                        >
                             {item.aiForecast}
                         </span>
                     ))}

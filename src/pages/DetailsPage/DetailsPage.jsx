@@ -90,6 +90,8 @@ function DetailsPage() {
                 animate={{
                     marginLeft: !isSidebarOpen ? "0px" : "360px",
                     width: !isSidebarOpen ? "100%" : "calc(100% - 360px)",
+                    maxHeight: "calc(100vh - 42px)",
+                    overflowY: "auto",
                 }}
                 transition={{
                     marginLeft: {
