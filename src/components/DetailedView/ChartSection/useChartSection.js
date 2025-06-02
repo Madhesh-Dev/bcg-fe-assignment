@@ -92,6 +92,9 @@ const useChartSection = ({ selectedCard }) => {
                     ticks: {
                         color: "#fff",
                     },
+                    border: {
+                        color: "#6bc8f0",
+                    },
                 },
                 y: {
                     title: {

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import classes from "./DetailsPage.module.css";
 import FloatingChatIcon from "./FloatingChatIcon";
@@ -11,6 +11,10 @@ function DetailsPage() {
     const { cities = [] } = inventoryMockData;
 
     const params = useParams();
+
+    const [isMobile, setIsMobile] = useState(false);
+
+    const sidebarWidth = isMobile ? "100vw" : "360px";
 
     const sampleData = cities.find((city) => city.id === params.id).detailSets;
 
@@ -27,6 +31,23 @@ function DetailsPage() {
         (card) => card.cardId === selectedCard
     );
 
+    useEffect(() => {
+        const mediaQuery = window.matchMedia("(max-width: 480px)");
+
+        const handleChange = () => setIsMobile(mediaQuery.matches);
+
+        handleChange();
+        mediaQuery.addEventListener("change", handleChange);
+
+        return () => mediaQuery.removeEventListener("change", handleChange);
+    }, []);
+
+    useEffect(() => {
+        if (isMobile) {
+            setIsSidebarOpen(false);
+        }
+    }, [isMobile]);
+
     return (
         <div className={classes["details-page-container"]}>
             <motion.div
@@ -37,7 +58,7 @@ function DetailsPage() {
                 animate={animationClass}
                 variants={{
                     open: {
-                        width: "360px",
+                        width: sidebarWidth,
                         height: "100%",
                         borderRadius: "0px",
                         padding: 0,
@@ -53,6 +74,9 @@ function DetailsPage() {
                         borderRight: "unset",
                         maxHeight: "unset",
                         zIndex: "999999",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
                     },
                 }}
                 transition={{
@@ -88,8 +112,10 @@ function DetailsPage() {
             <motion.div
                 initial={false}
                 animate={{
-                    marginLeft: !isSidebarOpen ? "0px" : "360px",
-                    width: !isSidebarOpen ? "100%" : "calc(100% - 360px)",
+                    marginLeft: !isSidebarOpen ? "0px" : sidebarWidth,
+                    width: !isSidebarOpen
+                        ? "100%"
+                        : `calc(100% - ${sidebarWidth})`,
                     maxHeight: "calc(100vh - 42px)",
                     overflowY: "auto",
                 }}

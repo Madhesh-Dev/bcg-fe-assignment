@@ -10,7 +10,7 @@
 
 .close_button:hover {
     transform: scale(1.05);
-} 
+}
 
 .header {
     display: flex;
