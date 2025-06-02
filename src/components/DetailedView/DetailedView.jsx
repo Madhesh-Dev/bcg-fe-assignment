@@ -19,10 +19,8 @@ function HeaderBar({ selectedCard }) {
                     Stack Id:{" "}
                     <span className={classes.stackIdValue}>{selectedCard}</span>
                 </span>
-                <TableChart
-                    style={{ width: "16px", height: "16px" }}
-                    className={classes.tableIcon}
-                />
+
+                <TableChart className={classes.tableIcon} />
             </div>
 
             <div className={classes.forecastBox}>

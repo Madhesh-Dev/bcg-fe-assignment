@@ -154,7 +154,9 @@ input:checked + .slider:before {
 }
 
 .tableIcon {
-    color: #5eead4; /* teal-300 */
+    width: 16px;
+    height: 16px;
+    color: #5eead4;
     cursor: pointer;
 }
 
@@ -221,5 +223,46 @@ input:checked + .slider:before {
 
     .row {
         font-size: 12px;
+    }
+
+    .stackIdLabel {
+        font-size: 13px;
+        color: #9ca3af;
+        margin-left: 0px;
+    }
+
+    .forecastBox {
+        display: flex;
+        background-color: #153443;
+        padding: 4px 8px;
+        border-radius: 8px;
+        gap: 16px;
+    }
+
+    .forecastLabel {
+        font-size: 8px;
+        color: #9ca3af;
+        margin-bottom: 6px;
+    }
+
+    .forecastValue {
+        font-weight: bold;
+        font-size: 12px;
+    }
+
+    .flagIcon {
+        font-size: 16px;
+        color: #9ca3af;
+        cursor: pointer;
+    }
+
+    .header {
+        padding: 6px 12px;
+    }
+
+    .tableIcon {
+        width: 14px;
+        height: 14px;
+        margin-right: 8px;
     }
 }
