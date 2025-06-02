@@ -130,4 +130,17 @@
     .historical-title {
         text-align: left;
     }
+
+    .historical-final,
+    .historical-consumption {
+        gap: 8px;
+    }
+
+    .progress-container {
+        gap: 4px;
+
+        span {
+            margin-bottom: 4px;
+        }
+    }
 }
