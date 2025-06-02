@@ -42,3 +42,26 @@ input:checked + .slider {
 input:checked + .slider:before {
     transform: translateX(12px);
 }
+
+@media screen and (max-width: 480px) {
+    .switch {
+        width: 24px;
+        height: 12px;
+    }
+
+    input:checked + .slider:before {
+        transform: translateX(10px);
+    }
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 10px;
+        width: 10px;
+        left: 2px;
+        bottom: 1px;
+        background-color: white;
+        transition: 0.4s;
+        border-radius: 50%;
+    }
+}

@@ -103,3 +103,31 @@
 .previous {
     border-top-color: #cfb6b1;
 }
+
+@media screen and (max-width: 480px) {
+    .legends-container {
+        flex-direction: column;
+        gap: 16px;
+        margin-top: 12px;
+        margin-bottom: 24px;
+        font-size: 9px;
+    }
+
+    .title,
+    .historical-title {
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+
+    .historical {
+        width: 100%;
+    }
+
+    .forecast {
+        width: 100%;
+    }
+
+    .historical-title {
+        text-align: left;
+    }
+}

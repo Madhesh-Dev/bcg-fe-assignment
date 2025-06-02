@@ -186,3 +186,40 @@ input:checked + .slider:before {
     color: #9ca3af;
     cursor: pointer;
 }
+
+@media screen and (max-width: 480px) {
+    .chart_section {
+        background-color: #0d1b2a;
+        padding: 6px 12px;
+        border-radius: 4px;
+    }
+
+    .controls {
+        padding: 6px 12px;
+
+        svg {
+            width: 16px;
+            height: 16px;
+        }
+    }
+
+    .dataTable {
+        margin-top: 16px;
+        border-radius: 4px;
+        padding: 6px 12px;
+        overflow-x: auto;
+    }
+
+    .title {
+        font-size: 12px;
+    }
+
+    .switchContainer,
+    .dropdownContainer {
+        gap: 8px;
+    }
+
+    .row {
+        font-size: 12px;
+    }
+}
