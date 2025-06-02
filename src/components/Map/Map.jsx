@@ -19,7 +19,7 @@ function MapImage() {
     return null;
 }
 
-function MapComponent() {
+function MapComponent({ setPageLoading }) {
     const [popupInfo, setPopupInfo] = useState(null);
 
     const mapRef = useRef(null);
@@ -69,6 +69,8 @@ function MapComponent() {
             zoom: 1.8,
             duration: 3000,
         });
+
+        setPageLoading(false);
     }, []);
 
     return (
