@@ -50,7 +50,7 @@
     bottom: 24px;
     left: 24px;
     border-radius: 50%;
-    position: absolute;
+    position: fixed;
     overflow: visible;
 }
 
